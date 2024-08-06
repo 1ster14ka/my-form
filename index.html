@@ -22,11 +22,17 @@
               name="user-name"
               placeholder="Full Name"
             />
-            <input type="email" class="rent-input" placeholder="Email" />
             <input
-              type="number"
+              type="email"
+              class="rent-input"
+              placeholder="Email"
+              pattern="([A-z0-9_.-]{1,})@([A-z0-9_.-]{1,}).([A-z]{2,8})"
+            />
+            <input
+              type="tel"
               class="rent-input"
               placeholder="Phone number"
+              pattern="^\+\d{2}-\d{3}-\d{3}-\d{2}-\d{2}$"
             />
             <textarea
               name=""
